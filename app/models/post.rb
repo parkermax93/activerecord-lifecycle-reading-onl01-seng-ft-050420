@@ -14,6 +14,10 @@ class Post < ActiveRecord::Base
       errors.add(:title, "Title must be in title case")
     end
   end
+  
+  def email_author_about_post 
+    
+  end
 
   def make_title_case
     self.title = self.title.titlecase
